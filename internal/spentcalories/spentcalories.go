@@ -90,7 +90,7 @@ func TrainingInfo(data string, weight, height float64) (string, error) {
 			"Дистанция: %.2f км.\n"+
 			"Скорость: %.2f км/ч\n"+
 			"Сожгли калорий: %.2f",
-		workout, duration, dist, averageSpeed, calories)
+		workout, duration.Hours(), dist, averageSpeed, calories)
 	return result, nil
 }
 
